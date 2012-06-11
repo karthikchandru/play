@@ -1,0 +1,178 @@
+.BtnBase {
+  cursor: pointer;
+  border: 0px;
+  color: white;
+  padding: 0 10px 2px 10px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0px 0px #888888;
+  -moz-box-shadow: 2px 2px 0px 0px #888888;
+  box-shadow: 2px 2px 0px 0px #888888;
+}
+/* Override default background Color  */
+HTML,
+BODY {
+  background: #374253 url(../images/bg_stripe.png) repeat-x;
+}
+/* ===========================================================================  */
+.login {
+  color: white;
+  min-height: 1060px;
+  background: transparent url(../images/bg_blue.png) no-repeat;
+}
+.login .login-top {
+  padding-top: 210px;
+}
+.login .login-top UL {
+  margin: 0px;
+  margin-left: -30px;
+}
+.login .login-top UL > LI {
+  list-style: none;
+  float: left;
+  padding: 12px 35px;
+}
+.login .login-top .vz-logo {
+  width: 100px;
+  height: 57px;
+  background: transparent url(../images/images.png) center center no-repeat;
+  background-position: 0px -28px;
+}
+.login .login-mid {
+  padding-top: 15px;
+}
+.login .login-mid form {
+  margin: 0px;
+  margin-top: 15px;
+}
+.login .login-mid form > input {
+  margin-bottom: 20px;
+}
+.login .login-mid .vdms-logo {
+  background: transparent url(../images/images.png) center center no-repeat;
+  width: 115px;
+  height: 135px;
+  background-position: -108px -28px;
+  margin-left: 15px;
+  margin-top: 35px;
+}
+.login .login-mid P {
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 45px;
+}
+.login .login-bottom {
+  padding-top: 40px;
+  font-size: 11px;
+  line-height: 30px;
+}
+.login .login-bottom .login-link {
+  color: #aca75a;
+}
+.login .login-bottom .login-link A:link,
+.login .login-bottom .login-link A:visited {
+  color: #aca75a;
+  text-decoration: none;
+}
+.login .login-bottom .login-link A:hover,
+.login .login-bottom .login-link A:active {
+  color: #ff0;
+  text-decoration: none;
+}
+.login [class^="icnLogin-"],
+.login [class*=" icnLogin-"] {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("../images/loginIcons.png");
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+.login [class^="icnLogin-"]:last-child,
+.login [class*=" icnLogin-"]:last-child {
+  *margin-left: 0;
+}
+.login .icnLogin-Account {
+  background-position: 0 0;
+}
+.login .icnLogin-Asset {
+  background-position: -37px 0;
+}
+.login .icnLogin-Onboarding {
+  background-position: -78 0;
+}
+.login .icnLogin-Order {
+  background-position: -111px 0;
+}
+.login .icnLogin-Report {
+  background-position: -148px 0;
+}
+.login .icnLogin-System {
+  background-position: -185px 0;
+}
+.login .btn-Blue {
+  cursor: pointer;
+  border: 0px;
+  color: white;
+  padding: 0 10px 2px 10px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0px 0px #888888;
+  -moz-box-shadow: 2px 2px 0px 0px #888888;
+  box-shadow: 2px 2px 0px 0px #888888;
+  background: #01bafb;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#01bafb), to(#0090d3));
+  background: -webkit-linear-gradient(#01bafb, #0090d3);
+  background: -moz-linear-gradient(#01bafb, #0090d3);
+  background: -ms-linear-gradient(#01bafb, #0090d3);
+  background: linear-gradient(#01bafb, #0090d3);
+  height: 28px;
+  font-size: 12px;
+  min-width: 95px;
+  margin-right: 15px;
+}
+.login .btn-Blue:hover {
+  cursor: pointer;
+  border: 0px;
+  color: white;
+  padding: 0 10px 2px 10px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0px 0px #888888;
+  -moz-box-shadow: 2px 2px 0px 0px #888888;
+  box-shadow: 2px 2px 0px 0px #888888;
+  background: #4dd0fc;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#4dd0fc), to(#4db2e0));
+  background: -webkit-linear-gradient(#4dd0fc, #4db2e0);
+  background: -moz-linear-gradient(#4dd0fc, #4db2e0);
+  background: -ms-linear-gradient(#4dd0fc, #4db2e0);
+  background: linear-gradient(#4dd0fc, #4db2e0);
+}
+.login .btn-Blue:active {
+  cursor: pointer;
+  border: 0px;
+  color: white;
+  padding: 0 10px 2px 10px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 0px 0px #888888;
+  -moz-box-shadow: 2px 2px 0px 0px #888888;
+  box-shadow: 2px 2px 0px 0px #888888;
+  background: #0083af;
+  background: -webkit-gradient(linear, 0 0, 0 bottom, from(#0083af), to(#006593));
+  background: -webkit-linear-gradient(#0083af, #006593);
+  background: -moz-linear-gradient(#0083af, #006593);
+  background: -ms-linear-gradient(#0083af, #006593);
+  background: linear-gradient(#0083af, #006593);
+}

@@ -1,0 +1,157 @@
+.Shadows(@horz, @vert, @blur, @spread, @shadowcolor){
+	-webkit-box-shadow:@horz @vert @blur @spread @shadowcolor;
+	-moz-box-shadow:@horz @vert @blur @spread @shadowcolor;
+	box-shadow:@horz @vert @blur @spread @shadowcolor;
+}
+
+.Gradient(@from: #d3d5d6, @to: #f1f1f1){
+	background: @from;
+	background: -webkit-gradient(linear, 0 0, 0 bottom, from(@from), to(@to));
+	background: -webkit-linear-gradient(@from, @to);
+	background: -moz-linear-gradient(@from, @to);
+	background: -ms-linear-gradient(@from, @to);
+	background: linear-gradient(@from, @to);
+}
+
+.RoundCorners(@radius: 5px) {
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	border-radius:@radius;
+}
+
+
+.BtnBase {
+	cursor:pointer;
+	border:0px;
+	color:white;
+	padding:0 10px 2px 10px;
+	text-align:center;
+	.RoundCorners(5px);
+	.Shadows(2px, 2px, 0px, 0px, #888);
+}
+
+
+/* Override default background Color  */
+HTML, BODY {
+	background:#374253 url(../images/bg_stripe.png) repeat-x;
+}
+
+
+/* ===========================================================================  */
+
+.login {
+	color:white;
+	min-height:1060px;
+	background: transparent url(../images/bg_blue.png) no-repeat;
+
+
+	.login-top {
+		padding-top:210px;
+		UL {
+			 margin: 0px;
+			 margin-left:-30px;
+		}
+
+		UL > LI { 
+			list-style:none;
+			float:left;
+			padding:12px 35px;
+		}
+
+		.vz-logo {
+			width:100px;
+			height:57px;
+			background:transparent url(../images/images.png) center center no-repeat;
+			background-position:0px -28px;
+		}
+	}
+
+	.login-mid {
+		padding-top:15px;
+		form {
+			margin: 0px;
+			margin-top: 15px;
+		}
+
+		form > input {
+			margin-bottom: 20px;
+		}
+		.vdms-logo {
+			background:transparent url(../images/images.png) center center no-repeat;
+			width:115px;
+			height:135px;
+			background-position:-108px -28px;
+			margin-left:15px;
+			margin-top:35px;
+		}
+
+		P {
+			font-size:20px;
+			line-height:35px;
+			margin-top:45px;
+		}
+	}
+
+	.login-bottom {
+		padding-top:40px;
+		font-size:11px;
+		line-height:30px;
+
+		.login-link {
+			color:#aca75a;
+			A:link, A:visited {
+				color:#aca75a;
+				text-decoration:none;
+			}
+			A:hover, A:active {
+				color:#ff0;
+				text-decoration:none;
+			}
+		}
+	}
+
+	//Icon Declaration
+	[class^="icnLogin-"],[class*=" icnLogin-"] { 
+		display: inline-block;  
+		width:32px;
+		height:32px;  
+		*margin-right: .3em;  
+		line-height: 14px;  
+		vertical-align: text-top; 
+		background-image: url("../images/loginIcons.png");  
+		background-position: 0px 0px;  
+		background-repeat: no-repeat;
+	}
+	
+	[class^="icnLogin-"]:last-child,[class*=" icnLogin-"]:last-child { 
+		*margin-left: 0;
+	}
+	
+	// Icon Positioning
+	.icnLogin-Account { background-position: 0 0;  } 
+	.icnLogin-Asset { background-position: -37px 0;  } 
+	.icnLogin-Onboarding { background-position: -78 0;  } 
+	.icnLogin-Order { background-position: -111px 0  } 
+	.icnLogin-Report { background-position: -148px 0;  } 
+	.icnLogin-System { background-position: -185px 0;  }
+
+	// Button Code below
+	.btn-Blue {
+		.BtnBase;
+		.Gradient(#01BAFB, #0090d3);
+		height:28px;
+		font-size:12px;
+		min-width:95px;
+		margin-right: 15px;
+		
+		&:hover {
+			.BtnBase;
+			.Gradient(#4dd0fc, #4db2e0);
+		}
+
+		&:active {
+			.BtnBase;
+			.Gradient(#0083af, #006593);
+		}	
+	}
+}
