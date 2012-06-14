@@ -400,6 +400,18 @@
     background-repeat: no-repeat;
     filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down, gets no color-stop at all for proper fallback
   }
+	.vertical-four-colors(@startColor: #00b3ee, @midColor: #7a43b6, @colorStop: 50%, @semiMidColor: #7a43b6, @colorStop: 50%, @endColor: #c3325f) {
+		background-color: mix(@midColor, @endColor, 80%);
+    background-image: -moz-linear-gradient(top, @startColor, @midColor @colorStop, @semiMidColor @colorStop, @endColor);		
+		background-repeat: no-repeat;
+  }
+	.bordered(@borderWidth:1px,@borderStyle:solid,@borderColor:#fff){
+		border-width:@borderWidth;
+		border-style:@borderStyle;
+		border-color:@borderColor;
+	}
+	
+	
   .radial(@innerColor: #555, @outerColor: #333)  {
     background-color: @outerColor;
     background-image: -webkit-gradient(radial, center center, 0, center center, 460, from(@innerColor), to(@outerColor));

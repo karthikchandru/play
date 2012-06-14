@@ -1,18 +1,231 @@
+body{
+	 position: relative;
+   background-image: url(img/grid.png);
+	overflow:scroll !important;
+}
+.grey {/*background-color: #E6E6E6;*/}
+
+
+.dashboard{
+	background:#263291 url(../img/dashboard.gif) no-repeat;
+	width:100%;
+	height:100%;
+	display:block;	
+	margin-bottom:0px;
+
+	.dashlogoWrapper{
+		background:url(../img/logo_bg.png) repeat-y;
+		height:100%;
+		width:190px;	
+		float:left;
+	
+		.verizonLogo{
+			background:url(../img/verizon_logo.png) no-repeat;
+			height:69px;
+			width:115px;
+			margin:10px 0 0 15px;	
+		}
+		.verizonName{
+			color:@white;
+			font-size:15px;
+			font-weight:@headingsFontWeight;
+			width:110px;
+			border-top:2px solid #fff;
+			margin:10px 0 0 15px;
+			padding-top:10px;
+		}
+	}
+	.dashUser{	
+		.dashSettings{
+			font-size:11px;
+			color:#fff;
+			float:right;
+			margin:15px 20px 0 0;
+			
+				.dashLbl{display:inline;font-size:11px;}
+				.dashLblUser{display:inline;font-size:11px;}
+				.dashLnkLogout{
+					color:@yellow;
+				}
+			.dashUserIcons{
+				float:right;
+				margin-left:7px;
+				
+				.dashIconTools{
+					background:url(../img/icon_tools.png) no-repeat;
+					width:15px;
+					height:15px;
+					float:left;
+					margin-left:10px;
+					cursor:pointer;
+				}
+				.dashIconSearch{
+					background:url(../img/icon_search.png) no-repeat;
+					width:18px;
+					height:18px;
+					float:left;
+					margin-left:10px;
+					cursor:pointer;
+				}
+				.dashIconAdd{
+					background:url(../img/icon_add.png) no-repeat;
+					width:18px;
+					height:18px;	
+					float:left;
+					margin-left:10px;
+					cursor:pointer;
+				}
+			}
+		}
+	}
+
+		.tile{				
+			float:left;
+			text-align:center;
+			#gradient > .bordered(1px,solid, rgba(255,255,255,0.4));
+			#gradient > .vertical-four-colors(#48508d, #1a2679, 50%, #2c3786, 50%,  #313889);
+			.box-shadow(0 3px 2px rgba(0,0,0,0.8));
+			
+			&.small{
+				width:120px;
+				height:140px;
+			}
+			&.medium{
+				width:280px;
+				height:150px;
+				background-color:blue;
+			}
+			&.large{
+				width:280px;
+				height:300px;
+				
+			}
+			&.extraLarge{
+				width:580px;
+				height:300px;
+				background-color:red;
+			}
+				
+			&.red{
+				#gradient > .vertical-three-colors(#c0453f, #891512,  50%,  #a04a4b);				
+				.box-shadow(0 3px 2px rgba(0,0,0,0.8));				
+			}
+			&.orange{
+				#gradient > .vertical-three-colors(#e99521, #bd540e,  50%,  #b26843);
+				.box-shadow(0 3px 2px rgba(0,0,0,0.8));				
+			}			
+			&.pink{
+				#gradient > .vertical-three-colors(#d444be, #be0d8c, 50%,  #ca3f9f);
+				.box-shadow(0 3px 2px rgba(0,0,0,0.8));								
+			}			
+			&.green{
+				#gradient > .vertical-three-colors(#35a529, #076f3a, 50%,  #379f29);
+				.box-shadow(0 3px 2px rgba(0,0,0,0.8));								
+			}
+			&.blue{
+				#gradient > .vertical-four-colors(#5988b6, #2162a7, 50%, #2469ba, 50%,  #337dd3);
+				.box-shadow(0 3px 2px rgba(0,0,0,0.8));								
+			}
+			&.purple{
+				#gradient > .vertical-four-colors(#7650b3, #5516ac, 50%, #6921bc, 50%,  #7d3ad0);
+				.box-shadow(0 3px 2px rgba(0,0,0,0.8));								
+			}		
+
+			h4{
+					color:@white;
+					margin:3px 0 0 5px;
+					text-align:left;
+			}
+			
+			.tileText{
+				font-size:12px;
+				text-align:center;				
+				margin:0px 0 0 0;
+				float:left;
+				padding:3px;			
+				width:100%;
+				color:@white;
+			}
+		}	
+		ul.alertList{
+			margin:0px auto;
+			width:100%;
+			font-size:12px;
+			color:#fff;
+			list-style:none;
+			
+			li{background-color:#a51912;padding:1px 4px;margin:10px;text-align:left;}
+			a{color:@yellow;}
+			
+			.alertDate{color:@btnInfoBackground;}
+		}
+		ul.noteList{
+			margin:0px auto;
+			width:100%;
+			font-size:12px;
+			color:#fff;
+			list-style:none;
+			
+			li{background-color:#cf6c12;padding:1px 4px;margin:10px;text-align:left;}
+			a{color:@yellow;}			
+			.alertDate{color:@blue;}
+		}
+		
+}
+.show-grid {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.show-grid [class*="span"] {
+   /* background-color: #49518c;*/
+}
+.show-grid .show-grid [class*="span"] {
+    background-color: #fff;
+}
+
 .span (@columns) {
       width: (@gridColumnWidth * @columns);
 }
+.span4{width:215px;}
+.span8{width:460px;}
 
-.dashTile {
-	&.purple {
-        background-color: #5217A3;
-      }
 
-    &.orange {
-        background-color: #BB5B11;
-      }
-}
+//Icon Declaration
+	[class^="icnDash-"],[class*=" icnDash-"] { 
+		display: inline-block;  
+		width:17px;
+		height:17px;  
+		*margin-right: .3em; 
+		margin-left: 4px; 
+		line-height: 14px;  
+		vertical-align: text-top; 
+		background-image: url("../img/dashIcons.png");  
+		background-position: 0px 0px;  
+		background-repeat: no-repeat;
+	}
+	
+	[class^="icnDash-"]:last-child,[class*=" icnDash-"]:last-child { 
+		*margin-left: 0;
+	}
+	
+	[class^="icnTile-"],[class*=" icnTile-"] { 
+		display: inline-block;  
+		width:40px;
+		height:40px; 
+		vertical-align: text-top; 
+		background-image: url("../img/icon_ie.png");  
+		background-position: 0px 0px;  
+		background-repeat: no-repeat;
+		margin:15px 0 10px 0;
+	}
 
-.dashTile-small {
-	width:150px;
-	height: 150px;
-}
+	
+	// Icon Positioning
+	.icnDash-Tools { background-position: 0 0;cursor:pointer;  } 
+	.icnDash-Search { background-position: -16px 0;cursor:pointer;  } 
+	.icnDash-Add { background-position: -34px 0;cursor:pointer;  } 
+	.icnTile-IE { background-position: 0 0;  } 
+	
+	
+
+	
