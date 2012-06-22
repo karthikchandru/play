@@ -1,0 +1,245 @@
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
+/* Override default background Color  */
+HTML, BODY {
+  background-color: #010f53;
+  position: relative;
+}
+.dashboard {
+  height: 100%;
+}
+.dashLogo {
+  background: url("../images/verizon_logo.png") no-repeat scroll 0 0 transparent;
+  height: 109px;
+  margin: 10px 0 0 0px;
+  width: 279px;
+  float: left;
+}
+.header {
+  margin-bottom: 70px;
+  width: 100%;
+  float: left;
+  margin-top: 10px;
+}
+.dashUser {
+  width: 70%;
+  float: right;
+}
+.dashUser .dashSettings {
+  text-align: right;
+  width: 100%;
+  color: #FFFFFF;
+  float: right;
+  font-size: 12px;
+  margin: 94px 20px 0 0;
+}
+.dashUser .dashSettings .dashLnkLogout {
+  color: #FFC40D;
+}
+.dashUser .dashSettings .dashLblUser {
+  display: inline;
+  font-size: 11px;
+}
+.dashUser .dashSettings .dashLbl {
+  display: inline;
+  font-size: 12px;
+}
+.dashUser .dashSettings .dashUserIcons {
+  float: right;
+  margin-left: 7px;
+}
+.dashUser .dashSettings .dashUserIcons .dashIconAdd {
+  background: url("../images/icon_add.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  float: left;
+  height: 18px;
+  margin-left: 10px;
+  width: 18px;
+}
+.dashUser .dashSettings .dashUserIcons .dashIconSearch {
+  background: url("../images/icon_search.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  float: left;
+  height: 18px;
+  margin-left: 10px;
+  width: 18px;
+}
+.dashUser .dashSettings .dashUserIcons .dashIconTools {
+  background: url("../images/icon_tools.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  float: left;
+  height: 15px;
+  margin-left: 10px;
+  width: 15px;
+}
+/*Tiles-------------------*/
+.tile {
+  cursor: move;
+  margin-bottom: 30px;
+  background-repeat: no-repeat;
+  border-color: rgba(255, 255, 255, 0.4);
+  border-style: solid;
+  border-width: 1px;
+  float: left;
+  text-align: center;
+}
+.tile .tileText {
+  color: #FFFFFF;
+  float: left;
+  font-size: 12px;
+  margin: 0 0 0;
+  padding: 3px;
+  text-align: center;
+  width: 100%;
+}
+.tile h3 {
+  color: #FFFFFF;
+  margin: 5px 0 0 10px;
+  text-align: left;
+  font-weight: normal;
+}
+.tile.orange {
+  background-color: #BB5819;
+  background: -moz-linear-gradient(top, #ac6746 0%, #a7470d 31%, #c3631d 32%, #dd8b21 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #dd8b21), color-stop(31%, #c3631d), color-stop(32%, #a7470d), color-stop(100%, #ac6746));
+  background: -webkit-linear-gradient(top, #dd8b21 0%, #c3631d 31%, #a7470d 32%, #ac6746 100%);
+  background: -o-linear-gradient(top, #dd8b21 0%, #c3631d 31%, #a7470d 32%, #ac6746 100%);
+  background: -ms-linear-gradient(top, #dd8b21 0%, #c3631d 31%, #a7470d 32%, #ac6746 100%);
+  background: linear-gradient(top, #dd8b21 0%, #c3631d 31%, #a7470d 32%, #ac6746 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#dd8b21', endColorstr='#ac6746', GradientType=0);
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+}
+.tile.red {
+  background-color: #8E201D;
+  background: -moz-linear-gradient(top, #a54b4e 0%, #941a1b 31%, #a82a25 32%, #c34341 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d241b9), color-stop(31%, #c723a0), color-stop(32%, #bb0f85), color-stop(100%, #c7409b));
+  background: -webkit-linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  background: -o-linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  background: -ms-linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  background: linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#d241b9', endColorstr='#c7409b', GradientType=0);
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+}
+.tile.purple {
+  background-color: #5D1DB3;
+  background: -moz-linear-gradient(top, #7650b3 0%, #5516ac 31%, #6921bc 32%, #7d3ad0 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7d3ad0), color-stop(31%, #6921bc), color-stop(32%, #5516ac), color-stop(100%, #7650b3));
+  background: -webkit-linear-gradient(top, #7d3ad0 0%, #6921bc 31%, #5516ac 32%, #7650b3 100%);
+  background: -o-linear-gradient(top, #7d3ad0 0%, #6921bc 31%, #5516ac 32%, #7650b3 100%);
+  background: -ms-linear-gradient(top, #7d3ad0 0%, #6921bc 31%, #5516ac 32%, #7650b3 100%);
+  background: linear-gradient(top, #7d3ad0 0%, #6921bc 31%, #5516ac 32%, #7650b3 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#7650B3', endColorstr='#7D3AD0', GradientType=0);
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+}
+.tile.blue {
+  background-color: #2567B0;
+  background: -moz-linear-gradient(top, #5988b6 0%, #2162a7 31%, #2469ba 32%, #337dd3 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #337dd3), color-stop(31%, #2469ba), color-stop(32%, #2162a7), color-stop(100%, #5988b6));
+  background: -webkit-linear-gradient(top, #337dd3 0%, #2469ba 31%, #2162a7 32%, #5988b6 100%);
+  background: -o-linear-gradient(top, #337dd3 0%, #2469ba 31%, #2162a7 32%, #5988b6 100%);
+  background: -ms-linear-gradient(top, #337dd3 0%, #2469ba 31%, #2162a7 32%, #5988b6 100%);
+  background: linear-gradient(top, #7d3ad0 0%, #2469ba 31%, #2162a7 32%, #5988b6 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#337DD3', endColorstr='#5988B6', GradientType=0);
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+}
+.tile.green {
+  background-color: #117937;
+  background: -moz-linear-gradient(top, #339d21 0%, #23822a 31%, #0c673f 32%, #3b826a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #3b826a), color-stop(31%, #0c673f), color-stop(32%, #23822a), color-stop(100%, #339d21));
+  background: -webkit-linear-gradient(top, #3b826a 0%, #0c673f 31%, #23822a 32%, #339d21 100%);
+  background: -o-linear-gradient(top, #3b826a 0%, #0c673f 31%, #23822a 32%, #339d21 100%);
+  background: -ms-linear-gradient(top, #3b826a 0%, #0c673f 31%, #23822a 32%, #339d21 100%);
+  background: linear-gradient(top, #3b826a 0%, #0c673f 31%, #23822a 32%, #339d21 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#3b826a', endColorstr='#339d21', GradientType=0);
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+}
+.tile.pink {
+  background-color: #C01790;
+  background: -moz-linear-gradient(top, #c7409b 0%, #bb0f85 31%, #c723a0 32%, #d241b9 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d241b9), color-stop(31%, #c723a0), color-stop(32%, #bb0f85), color-stop(100%, #c7409b));
+  background: -webkit-linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  background: -o-linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  background: -ms-linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  background: linear-gradient(top, #d241b9 0%, #c723a0 31%, #bb0f85 32%, #c7409b 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#d241b9', endColorstr='#c7409b', GradientType=0);
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+}
+.tile.grey {
+  background-color: #395490;
+  background: -moz-linear-gradient(top, #576a99 0%, #38538d 31%, #47629c 32%, #4f6ba4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4f6ba4), color-stop(31%, #47629c), color-stop(32%, #38538d), color-stop(100%, #576a99));
+  background: -webkit-linear-gradient(top, #4f6ba4 0%, #47629c 32%, #38538d 32%, #576a99 100%);
+  background: -o-linear-gradient(top, #4f6ba4 0%, #47629c 31%, #38538d 32%, #576a99 100%);
+  background: -ms-linear-gradient(top, #4f6ba4 0%, #47629c 31%, #38538d 32%, #576a99 100%);
+  background: linear-gradient(top, #4f6ba4 0%, #47629c 310%, #38538d 32%, #576a99 100%);
+  filter: progid:dximagetransform.microsoft.gradient(startColorstr='#4f6ba4', endColorstr='#576a99', GradientType=0);
+  background-repeat: no-repeat;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.8);
+}
+.tile.small {
+  height: 150px;
+  width: 150px;
+}
+.tile.semiSmall {
+  height: 150px;
+  width: 330px;
+}
+.tile.medium {
+  width: 330px;
+  height: 150px;
+}
+.tile.large {
+  width: 330px;
+  height: 330px;
+}
+.tile.extraLarge {
+  height: 330px;
+  width: 690px;
+}
+.show-grid [class*="span"] {
+  min-height: 30px;
+  text-align: center;
+}
+/*dash tile----------------*/
+.dashIconIE {
+  background: url(../images/dashIconIE.png) no-repeat;
+  width: 67px;
+  height: 67px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px 0 5px 0;
+  position: relative;
+  top: 0px;
+}
+.dashTileText {
+  text-align: center;
+  color: #fff;
+  font-size: 13px;
+  padding: 0px 10px;
+  position: relative;
+}
+.dashTileColor {
+  width: 100%;
+  height: 30px;
+  z-index: 999;
+  position: relative;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.dashTileColor .dashIcon_ColorPalate {
+  background: url(../images/dashTileColor_Open.png) no-repeat right 0px;
+  width: 15px;
+  height: 12px;
+  float: right;
+  display: block;
+  margin: 8px 8px 0 0;
+  cursor: pointer;
+}
+.container {
+  margin: 0px 20px;
+}
